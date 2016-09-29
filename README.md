@@ -3,8 +3,12 @@
 To add Appodeal ads to your project you should download this plugin and add folder "appodeal" to your project folder "modules".
 
 After that you should build your project in Ted SDK to convert your app to XCode project.
-If you see error like this: 'MonkeyXPro78h/modules/appodeal/appodeal_example.buildv78h/ios/main.mm:4290:9: fatal error: 'Appodeal/Appodeal.h' file not found
-#import "Appodeal/Appodeal.h"' don't worry, we will fix that later.
+If you see error like this: 
+```
+MonkeyXPro78h/modules/appodeal/appodeal_example.buildv78h/ios/main.mm:4290:9: fatal error: 'Appodeal/Appodeal.h' file not found
+#import "Appodeal/Appodeal.h"
+```
+Don't worry, we will fix that later.
 
 After building open generated XCode project and make some changes:
 
