@@ -36,6 +36,6 @@ You can download all adapters from here: https://github.com/appodeal/appodeal-io
 Unpack archive and drag and drop adapters that you need to your project.
 After this your project tree in XCode should be like this one:
 
-![Alt text](https://i.gyazo.com/a9bacea9c230e03830f839a71fd69268.png)
+  ![Alt text](https://i.gyazo.com/a9bacea9c230e03830f839a71fd69268.png)
 
 All done, now you can launch your project in XCode.
