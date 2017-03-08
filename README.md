@@ -18,24 +18,35 @@ After converting you should open generated XCode project and make some changes:
 2. Disable bitcode in Build Settings -> Build Options of your project.
 ![Alt text](https://i.gyazo.com/8a503546a1502d216fd6bcad3c31413a.png)
 
-3. Add "Allow arbitrary loads" subproperty in "App Transport Security" property and set value to YES
-![Alt text](https://i.gyazo.com/d9914758eb9e9f2fe181e743b6449f7a.png)
+3. Set up the following keys in your app’s info.plist:
+
+```
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSAllowsArbitraryLoads</key>
+  <true/>
+</dict>
+```
+
+Add this key in Info.plist , if you use this function in your app
+
+```
+<key>NSBluetoothPeripheralUsageDescription</key>
+<string>Advertising</string>
+<key>NSCalendarsUsageDescription</key>
+<string>Advertising</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Advertising</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Advertising</string>
+```
 
 4. Change deployment target in project settings and target settings to 8.1 or higher.
-![Alt text](https://i.gyazo.com/34945a9fe4eb50e0921b22a2a8344be9.png)
-![Alt text](https://i.gyazo.com/9421a8230374a6fae563ff87f0e28389.png)
 
-5. Add "libz.tbd", "libc++.tbd", "libsqlite3.tbd", "libsqlite3.0" libraries to Build phases->Link Binary With Libraries.
-![Alt text](https://i.gyazo.com/ef7094ed523f836a2d74c63da725a8b9.png)
+5. Add "libz.tbd", "libc++.tbd", "libsqlite3.tbd", "libxml2.2" libraries to Build phases->Link Binary With Libraries.
 
 6. Add "Appodeal.framework" and "Appodeal.bundle" to folder "frameworks" in your project.
-First, download Appodeal SDK from here: http://bit.ly/appodeal-ios-sdk-1-2-4
-After downloading unpach archive and simply drag and drop framework and bundle to your project. Doing this you should check "Copy items if needed" option.
-This SDK needs some adapters to work with. Each adapter is responsible for showing ads from its ad network.
-You can download all adapters from here: https://github.com/appodeal/appodeal-ios-sdk-mobile-adapters .
-Unpack archive and drag and drop adapters that you need to your project.
-After this your project tree in XCode should be like this one:
-
-  ![Alt text](https://i.gyazo.com/a9bacea9c230e03830f839a71fd69268.png)
+First, download Appodeal SDK from here: http://bit.ly/ios-sdk-1-3-9
+After downloading umzip archive and simply drag and drop framework and Resources to your project. Doing this you should check "Copy items if needed" option.
 
 All done, now you can launch your project in XCode.
