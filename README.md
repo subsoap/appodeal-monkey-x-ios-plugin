@@ -44,9 +44,12 @@ Add this key in Info.plist , if you use this function in your app
 4. Change deployment target in project settings and target settings to 8.1 or higher.
 
 5. Add "libz.tbd", "libc++.tbd", "libsqlite3.tbd", "libxml2.2" libraries to Build phases->Link Binary With Libraries.
+![Alt text](http://i.imgur.com/GQc4oX5.png)
 
 6. Add "Appodeal.framework" and "Appodeal.bundle" to folder "frameworks" in your project.
 First, download Appodeal SDK from here: http://bit.ly/ios-sdk-1-3-9
-After downloading umzip archive and simply drag and drop framework and Resources to your project. Doing this you should check "Copy items if needed" option.
+After downloading unzip archive. Renamed the "Resources" folder in unzipped files to "Appodeal.bundle" then drag and drop framework and Resources to your project. Doing this you should check "Copy items if needed" option.
+![Alt text](http://i.imgur.com/v6lc5Hq.png)
+![Alt text](http://i.imgur.com/M7Viy7F.png)
 
 All done, now you can launch your project in XCode.
