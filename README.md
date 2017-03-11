@@ -56,4 +56,4 @@ After downloading unzip archive. Drag and drop Appodeal.framework into your proj
 
 ![Alt text](http://i.imgur.com/Wvbvkqe.png)
 
-All done, now you can launch your project in XCode.
+All done, now you can launch your project in XCode. If something goes wrong ensure that you have followed the steps proplerly, and that a basic Monkey project can be built and ran on your device. A good sample to use is bananas/mak/bouncingaliens.monkey
