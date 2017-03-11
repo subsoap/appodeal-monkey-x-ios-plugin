@@ -8,9 +8,9 @@ If you see error like this:
 MonkeyXPro78h/modules/appodeal/appodeal_example.buildv78h/ios/main.mm:4290:9: fatal error: 'Appodeal/Appodeal.h' file not found
 #import "Appodeal/Appodeal.h"
 ```
-don't worry, we will fix that later.
+Do not worry - this will be fixed in the next steps.
 
-After converting you should open generated XCode project and make some changes:
+After making the target build with Monkey, you should next open the generated XCode project and make some changes:
 
 1. Type bundle identifier, current version of app and choose Provisioning profile for successful debug.
 ![Alt text](https://i.gyazo.com/820f0f6d620f1ff4c73c50a7e6ead7de.png)
