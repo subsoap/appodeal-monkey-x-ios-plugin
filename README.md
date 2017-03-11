@@ -48,8 +48,10 @@ Add this key in Info.plist , if you use this function in your app
 
 6. Add "Appodeal.framework" and "Appodeal.bundle" to folder "frameworks" in your project.
 First, download Appodeal SDK from here: http://bit.ly/ios-sdk-1-3-9
-After downloading unzip archive. Renamed the "Resources" folder in unzipped files to "Appodeal.bundle" then drag and drop framework and Resources to your project. Doing this you should check "Copy items if needed" option.
-![Alt text](http://i.imgur.com/v6lc5Hq.png)
+After downloading unzip archive. Drag and drop Appodeal.framework into your project. Then right click on your project (MonkeyGame), click New Group, name it Resources, and then drag and drop the files from the Resources folder into the Resources group in your project. When dragging and dropping files both times you should check "Copy items if needed" option.
+
 ![Alt text](http://i.imgur.com/M7Viy7F.png)
+
+![Alt text](http://i.imgur.com/Wvbvkqe.png)
 
 All done, now you can launch your project in XCode.
