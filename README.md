@@ -1,8 +1,8 @@
 # appodeal-monkey-x-ios-plugin
 
-To add Appodeal ads to your project you should download this plugin and add folder "appodeal" to your project folder "modules".
+To add Appodeal ads to your iOS target Monkey project, you should download this plugin and add folder "appodeal" to your project folder "modules". See the example in this git for how this is to be done in a Monkey project.
 
-After that you should build your project in Ted SDK to convert your app to XCode project.
+After that you should build your project in Ted or another Monkey friendly IDE to convert your app to XCode project.
 If you see error like this: 
 ```
 MonkeyXPro78h/modules/appodeal/appodeal_example.buildv78h/ios/main.mm:4290:9: fatal error: 'Appodeal/Appodeal.h' file not found
@@ -28,7 +28,7 @@ After making the target build with Monkey, you should next open the generated XC
 </dict>
 ```
 
-Add this key in Info.plist , if you use this function in your app
+Add this key in Info.plist, if you use these functions in your app
 
 ```
 <key>NSBluetoothPeripheralUsageDescription</key>
